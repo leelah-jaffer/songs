@@ -14,7 +14,8 @@ class Song (
     var duration: String = ""
 
     //secondary constructor
-    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, "")
+    constructor(songName: String, songArtist: String) : this(songName, songArtist,
+        0, "")
 
 
 
@@ -54,6 +55,11 @@ class Song (
         return true
 
 
+    }
+
+    // function to display the songs
+    fun DisplayingSong() : String{
+        return "$name - $artist ($duration)"
     }
 
 }

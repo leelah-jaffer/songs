@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.songapp.Song //only if you have issues if the package have completely different names
 
 
 
@@ -15,9 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Accessing song class with specific attributes
-        var song1 = Song("Snooze", "Sza", 2023, "3.15")
-        var song2 = Song("Treasure", "Bruno Mars", 2022, "3.45")
-        var song3 = Song("Shape of You", "Ed Sheereen")
+        var song1 = Song("Snooze", "Sza", 2022,
+            "3.15")
+        var song2 = Song("Treasure", "Bruno Mars",
+            2012, "3.45")
+        var song3 = Song("Shape of You", "Ed Shereen")
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
