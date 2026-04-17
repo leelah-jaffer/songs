@@ -5,13 +5,18 @@ import android.util.Log
 class Song (
     // created constructor
     songName: String, songArtist: String, songYear: Int,songDuration: String)
-
 {
+
     // the properties
     var name: String = ""
     var artist: String = ""
     var year: Int = 0
     var duration: String = ""
+
+    //secondary constructor
+    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, "")
+
+
 
     //Initialising Variables
     init{
