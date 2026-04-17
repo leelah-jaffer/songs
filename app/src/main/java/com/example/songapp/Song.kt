@@ -2,12 +2,25 @@ package com.example.songapp
 
 import android.util.Log
 
-class Song {
+class Song (
+    // created constructor
+    songName: String, songArtist: String, songYear: Int,songDuration: String)
+
+{
     // the properties
     var name: String = ""
-    var artists: String = ""
+    var artist: String = ""
     var year: Int = 0
     var duration: String = ""
+
+    //Initialising Variables
+    init{
+        name = songName
+        artist = songArtist
+        year = songYear
+        duration = songDuration
+    }
+
 
     //function to play song
     fun play(){
