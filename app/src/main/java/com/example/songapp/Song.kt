@@ -13,7 +13,7 @@ class Song (
     var year: Int = 0
     var duration: String = ""
 
-    //secondary constructor
+    //secondary constructor, in the brackets, its the thing we know, not the things we dont know
     constructor(songName: String, songArtist: String) : this(songName, songArtist,
         0, "")
 

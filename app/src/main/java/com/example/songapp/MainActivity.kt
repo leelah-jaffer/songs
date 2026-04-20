@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var songShow = findViewById<TextView>(R.id.songDisplayId)
+        var songDisplay = ""
 
         //Accessing song class with specific attributes
         var song1 = Song("Snooze", "Sza", 2022,
@@ -26,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         var song2 = Song("Treasure", "Bruno Mars",
             2012, "3.45")
         var song3 = Song("Shape of You", "Ed Shereen")
+
+       // creating array to hold song objects. (these songs objects, we defined in our song class)
+        var songs = arrayOf<Song>(song1, song2, song3)
+
+        for (song in songs){
+            songDisplay += "${song.play()}\n\n"
+        }
+
+        songShow.text = songDisplay
+
 
 
 
